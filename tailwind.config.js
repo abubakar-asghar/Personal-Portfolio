@@ -6,6 +6,7 @@ module.exports = {
     "./components/**/*.{js,jsx}",
     "./app/**/*.{js,jsx}",
     "./src/**/*.{js,jsx}",
+    'node_modules/@radix-ui/**/*.{js,ts,jsx,tsx}',
   ],
   prefix: "",
   theme: {
