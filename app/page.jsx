@@ -7,27 +7,18 @@ import { Button } from "@/Components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
 export const Home = () => {
-  const handleDownloadCV = async () => {
-  try {
-    const response = await fetch("/assets/Abubakar_CV.pdf");
-    const blob = await response.blob();
-    const url = window.URL.createObjectURL(blob);
-    
+  const handleDownloadCV = () => {
+    const cvUrl = "/assets/Abubakar_CV.pdf";
+
     const link = document.createElement("a");
-    link.href = url;
+    link.href = cvUrl;
+
     link.download = "AbuBakar_CV.pdf";
+
     document.body.appendChild(link);
     link.click();
-    
-    // Cleanup
-    setTimeout(() => {
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(url);
-    }, 100);
-  } catch (error) {
-    console.error("Download failed:", error);
-  }
-};
+    document.body.removeChild(link);
+  };
 
   return (
     <section className="h-full">

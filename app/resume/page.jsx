@@ -67,14 +67,14 @@ const experience = {
   items: [
     {
       Company: "Corvit Systems",
-      Position: "Full Stack developer (Internee)",
-      duration: "Sep 2024 - present",
+      Position: "Web developer (Internee)",
+      duration: "Sep 2024 - Dec 2024",
     },
-    {
-      Company: "Full-Stack AI Dev",
-      Position: "MERN Developer (Remote)",
-      duration: "Oct 2023 - Jan 2024",
-    },
+    // {
+    //   Company: "Full-Stack AI Dev",
+    //   Position: "MERN Developer (Remote)",
+    //   duration: "Oct 2023 - Jan 2024",
+    // },
     {
       Company: "Gamica Cloud",
       Position: "Web Developer (Internee)",
@@ -92,7 +92,7 @@ const education = {
     {
       institution: "Government College Universty Faisalabad",
       degree: "BS-Computer Science",
-      duration: "2021 - present",
+      duration: "2021 - 2025",
     },
 
     {

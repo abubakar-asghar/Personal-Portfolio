@@ -32,27 +32,28 @@ module.exports = {
     //   primary: "var(--font-poppins)",
     // },
     extend: {
-      colors: {
-        primary: "#3e4e50",
-        accent: {
-          DEFAULT: "#ffbb00",
-          hover: "#d99a00",
-        },
-        secondary: "#2d3a3b",
-        earthy: "#a2c3a4",
-        warm: "#ffe4c1",
+      // colors: {
+      //   primary: "#3e4e50",
+      //   accent: {
+      //     DEFAULT: "#ffbb00",
+      //     hover: "#d99a00",
+      //   },
+      //   secondary: "#2d3a3b",
+      //   earthy: "#a2c3a4",
+      //   warm: "#ffe4c1",
         // colors: {
         //   primary: '#212121', // Neutral Black for a clean base
         //   accent: {
         //     DEFAULT: '#00ffff', // Neon Cyan for accents
         //     hover: '#00e5e5', // Slightly dimmed Cyan for hover
         //   },
-        // colors: {
-        //   primary: '#2b2e4a', // Rich Indigo for backgrounds
-        //   accent: {
-        //     DEFAULT: '#ff7e67', // Warm Tangerine
-        //     hover: '#ff6347', // Coral for hover
-        //   },
+        colors: {
+          primary: '#2b2e4a', // Rich Indigo for backgrounds
+          accent: {
+            DEFAULT: '#ff7e67', // Warm Tangerine
+            hover: '#ff6347', // Coral for hover
+          },
+            secondary: '#393c57', // Muted Indigo for secondary elements
         // colors: {
         //   primary: '#1a202c', // Charcoal for backgrounds
         //   accent: {
