@@ -20,103 +20,103 @@ import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtns from "@/Components/WorkSliderBtns";
 
-const projects = [
-  {
-    num: "01",
-    category: "mern stack",
-    title: "Personal Diary App",
-    description:
-      "A diary app with user authentication and CRUD functionality for managing personal entries, featuring a sleek UI.",
-    stack: [
-      { name: "React.js" },
-      { name: "Tailwind CSS" },
-      { name: "Express.js" },
-      { name: "MongoDB" },
-    ],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "02",
-    category: "next js",
-    title: "Multi-Seller E-commerce Platform",
-    description:
-      "An e-commerce platform enabling multiple sellers to list products, with a dynamic admin and user dashboard.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "Redux Toolkit" },
-      { name: "MongoDB" },
-    ],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "03",
-    category: "mern stack",
-    title: "E-commerce Store",
-    description:
-      "A comprehensive e-commerce platform built with the MERN stack, featuring a robust admin panel for managing products, categories, and users. The platform allows multiple sellers to list products, supports dynamic dashboards, and includes Redux Toolkit for efficient state management.",
-    stack: [
-      { name: "React Js" },
-      { name: "Express.js" },
-      { name: "Redux" },
-      { name: "MongoDB" },
-    ],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "04",
-    category: "frontend",
-    title: "Shopping Basket App",
-    description:
-      "A shopping basket app with dynamic cart management, checkout features, and a responsive UI.",
-    stack: [
-      { name: "Next.js" },
-      { name: "DaisyUI" },
-      { name: "TypeScript" },
-      { name: "Redux Toolkit" },
-    ],
-    image: "/assets/work/basket-app.png",
-    live: "https://nextjs-shopping-basket.vercel.app/",
-    github: "",
-  },
-  {
-    num: "05",
-    category: "frontend",
-    title: "React Timer App",
-    description:
-      "A dynamic React Timer App with customizable start, stop, and reset functionality. Built using React hooks for state management and a responsive design for seamless usability.",
-    stack: [
-      { name: "React js" },
-      { name: "Tailwind CSS" },
-      { name: "TypeScript" },
-    ],
-    image: "/assets/work/timer-app.png",
-    live: "https://ab-timer-app.surge.sh/",
-    github: "",
-  },
-  {
-    num: "06",
-    category: "frontend",
-    title: "Idlly UI Clone",
-    description:
-      "A visually captivating and responsive UI clone of the Idlly platform, showcasing proficiency in modern web design practices and interactive elements for practice purposes.",
-    stack: [
-      { name: "HTML" },
-      { name: "CSS" },
-      { name: "JavaScript" },
-      { name: "Swiper.js" },
-    ],
-    image: "/assets/work/illdy-ui.png",
-    live: "https://illdy.surge.sh/",
-    github: "",
-  },
-];
+// const projects = [
+//   {
+//     num: "01",
+//     category: "mern stack",
+//     title: "Personal Diary App",
+//     description:
+//       "A diary app with user authentication and CRUD functionality for managing personal entries, featuring a sleek UI.",
+//     stack: [
+//       { name: "React.js" },
+//       { name: "Tailwind CSS" },
+//       { name: "Express.js" },
+//       { name: "MongoDB" },
+//     ],
+//     image: "/assets/work/thumb1.png",
+//     live: "",
+//     github: "https://github.com/abubakar-asghar/Diary-App-MERN",
+//   },
+//   {
+//     num: "02",
+//     category: "next js",
+//     title: "Multi-Seller E-commerce Platform",
+//     description:
+//       "An e-commerce platform enabling multiple sellers to list products, with a dynamic admin and user dashboard.",
+//     stack: [
+//       { name: "Next.js" },
+//       { name: "Tailwind CSS" },
+//       { name: "Redux Toolkit" },
+//       { name: "MongoDB" },
+//     ],
+//     image: "/assets/work/thumb2.png",
+//     live: "",
+//     github: "",
+//   },
+//   {
+//     num: "03",
+//     category: "mern stack",
+//     title: "E-commerce Store",
+//     description:
+//       "A comprehensive e-commerce platform built with the MERN stack, featuring a robust admin panel for managing products, categories, and users. The platform allows multiple sellers to list products, supports dynamic dashboards, and includes Redux Toolkit for efficient state management.",
+//     stack: [
+//       { name: "React Js" },
+//       { name: "Express.js" },
+//       { name: "Redux" },
+//       { name: "MongoDB" },
+//     ],
+//     image: "/assets/work/thumb2.png",
+//     live: "",
+//     github: "",
+//   },
+//   {
+//     num: "04",
+//     category: "frontend",
+//     title: "Shopping Basket App",
+//     description:
+//       "A shopping basket app with dynamic cart management, checkout features, and a responsive UI.",
+//     stack: [
+//       { name: "Next.js" },
+//       { name: "DaisyUI" },
+//       { name: "TypeScript" },
+//       { name: "Redux Toolkit" },
+//     ],
+//     image: "/assets/work/basket-app.png",
+//     live: "https://nextjs-shopping-basket.vercel.app/",
+//     github: "",
+//   },
+//   {
+//     num: "05",
+//     category: "frontend",
+//     title: "React Timer App",
+//     description:
+//       "A dynamic React Timer App with customizable start, stop, and reset functionality. Built using React hooks for state management and a responsive design for seamless usability.",
+//     stack: [
+//       { name: "React js" },
+//       { name: "Tailwind CSS" },
+//       { name: "TypeScript" },
+//     ],
+//     image: "/assets/work/timer-app.png",
+//     live: "https://ab-timer-app.surge.sh/",
+//     github: "",
+//   },
+//   {
+//     num: "06",
+//     category: "frontend",
+//     title: "Idlly UI Clone",
+//     description:
+//       "A visually captivating and responsive UI clone of the Idlly platform, showcasing proficiency in modern web design practices and interactive elements for practice purposes.",
+//     stack: [
+//       { name: "HTML" },
+//       { name: "CSS" },
+//       { name: "JavaScript" },
+//       { name: "Swiper.js" },
+//     ],
+//     image: "/assets/work/illdy-ui.png",
+//     live: "https://illdy.surge.sh/",
+//     github: "",
+//   },
+// ];
 
 // const Work = () => {
 //   const [project, setProject] = useState(projects[0]);
@@ -223,6 +223,140 @@ const projects = [
 //     </motion.section>
 //   );
 // };
+const projects = [
+  {
+    num: "01",
+    category: "next js",
+    title: "ServMaster Admin Panel",
+    description:
+      "A comprehensive admin dashboard for managing service providers, customers, and services in the ServMaster ecosystem. Features include service provider verification and services management.",
+    stack: [
+      { name: "Next.js" },
+      { name: "shadcn/ui" },
+      { name: "Node.js" },
+      { name: "Redux Toolkit" },
+      { name: "TanStack Query" },
+      { name: "MongoDB" },
+    ],
+    image: "/assets/work/servmaster-admin.png",
+    live: "https://servmaster-admin.vercel.app/",
+    github: "https://github.com/abubakar-asghar/ServMaster-Home-Service-and-Handyman-Booking-App",
+  },
+  {
+    num: "02",
+    category: "react native",
+    title: "ServMaster Mobile App",
+    description:
+      "A home service and handyman booking application built with React Native Expo. Customers can book services while providers can register and manage their services. Features include real-time booking and chat.",
+    stack: [
+      { name: "React Native" },
+      { name: "Expo" },
+      { name: "NativeWind" },
+      { name: "Redux Toolkit" },
+      { name: "TanStack Query" },
+      { name: "Node.js" },
+    ],
+    image: "/assets/work/servmaster-mobile.png",
+    live: "",
+    github: "https://github.com/abubakar-asghar/ServMaster-Home-Service-and-Handyman-Booking-App",
+  },
+  {
+    num: "03",
+    category: "next js",
+    title: "Multi-Seller E-commerce Platform",
+    description:
+      "An e-commerce platform enabling multiple sellers to list products, with a dynamic admin and user dashboard.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind CSS" },
+      { name: "Redux Toolkit" },
+      { name: "MongoDB" },
+    ],
+    image: "/assets/work/thumb2.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "04",
+    category: "mern stack",
+    title: "E-commerce Store",
+    description:
+      "A comprehensive e-commerce platform built with the MERN stack, featuring a robust admin panel for managing products, categories, and users. The platform allows multiple sellers to list products, supports dynamic dashboards, and includes Redux Toolkit for efficient state management.",
+    stack: [
+      { name: "React Js" },
+      { name: "Express.js" },
+      { name: "Redux" },
+      { name: "MongoDB" },
+    ],
+    image: "/assets/work/thumb2.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "05",
+    category: "frontend",
+    title: "Shopping Basket App",
+    description:
+      "A shopping basket app with dynamic cart management, checkout features, and a responsive UI.",
+    stack: [
+      { name: "Next.js" },
+      { name: "DaisyUI" },
+      { name: "TypeScript" },
+      { name: "Redux Toolkit" },
+    ],
+    image: "/assets/work/basket-app.png",
+    live: "https://nextjs-shopping-basket.vercel.app/",
+    github: "",
+  },
+  {
+    num: "06",
+    category: "mern stack",
+    title: "Personal Diary App",
+    description:
+      "A diary app with user authentication and CRUD functionality for managing personal entries, featuring a sleek UI.",
+    stack: [
+      { name: "React.js" },
+      { name: "Tailwind CSS" },
+      { name: "Express.js" },
+      { name: "MongoDB" },
+    ],
+    image: "/assets/work/thumb1.png",
+    live: "",
+    github: "https://github.com/abubakar-asghar/Diary-App-MERN",
+  },
+  {
+    num: "07",
+    category: "frontend",
+    title: "React Timer App",
+    description:
+      "A dynamic React Timer App with customizable start, stop, and reset functionality. Built using React hooks for state management and a responsive design for seamless usability.",
+    stack: [
+      { name: "React js" },
+      { name: "Tailwind CSS" },
+      { name: "TypeScript" },
+    ],
+    image: "/assets/work/timer-app.png",
+    live: "https://ab-timer-app.surge.sh/",
+    github: "",
+  },
+  {
+    num: "08",
+    category: "frontend",
+    title: "Idlly UI Clone",
+    description:
+      "A visually captivating and responsive UI clone of the Idlly platform, showcasing proficiency in modern web design practices and interactive elements for practice purposes.",
+    stack: [
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "JavaScript" },
+      { name: "Swiper.js" },
+    ],
+    image: "/assets/work/illdy-ui.png",
+    live: "https://illdy.surge.sh/",
+    github: "",
+  },
+];
+
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
   const handleSlideChange = (swiper) => {
@@ -242,7 +376,7 @@ const Work = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:gap-12">
           {/* Left Content - Modified layout */}
-          <div className="w-full lg:w-[45%] lg:h-[500px] flex flex-col justify-center order-2 lg:order-none mb-8 lg:mb-0">
+          <div className="w-full lg:w-[45%] lg:h-[600px] flex flex-col order-2 lg:order-none mb-8 lg:mb-0">
             <div className="flex flex-col gap-6">
               <div className="flex items-baseline gap-4">
                 <span className="text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent/70">
@@ -252,20 +386,20 @@ const Work = () => {
                   {project.category}
                 </span>
               </div>
-              
+
               <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
                 {project.title}
               </h2>
-              
+
               <div className="h-[2px] w-24 bg-accent my-2"></div>
-              
+
               <p className="text-white/80 leading-relaxed mb-4">
                 {project.description}
               </p>
-              
+
               <div className="flex flex-wrap gap-3 mb-6">
                 {project.stack.map((item, index) => (
-                  <span 
+                  <span
                     key={index}
                     className="px-3 py-1 rounded-full bg-white/10 text-accent border border-accent/30 text-sm"
                   >
@@ -273,7 +407,7 @@ const Work = () => {
                   </span>
                 ))}
               </div>
-              
+
               <div className="flex items-center gap-6">
                 <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>
@@ -302,7 +436,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Right Content - Modified slider */}
           <div className="w-full lg:w-[55%] relative">
             <Swiper
@@ -313,7 +447,7 @@ const Work = () => {
             >
               {projects.map((project, index) => (
                 <SwiperSlide key={index} className="w-full">
-                  <div className="h-[400px] lg:h-[500px] relative group flex justify-center items-center bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm">
+                  <div className="h-[400px] lg:h-[540px] relative group flex justify-center items-center bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm">
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
                     <div className="relative w-full h-full">
                       <Image

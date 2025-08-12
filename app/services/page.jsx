@@ -93,42 +93,99 @@ import { FiArrowRight } from "react-icons/fi";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
+// const Services = [
+//   {
+//     num: "01",
+//     title: "MERN Stack Development",
+//     description:
+//       "Specializing in developing full-stack web applications using MongoDB, Express.js, React.js, and Node.js.",
+//     href: "",
+//   },
+//   {
+//     num: "02",
+//     title: "Next.js Development",
+//     description:
+//       "Building high-performance, SEO-friendly web applications using Next.js and its advanced features.",
+//     href: "",
+//   },
+//   {
+//     num: "03",
+//     title: "Front-End Development",
+//     description:
+//       "Creating visually appealing and responsive user interfaces using modern frameworks like React.js.",
+//     href: "",
+//   },
+//   {
+//     num: "04",
+//     title: "Back-End Development",
+//     description:
+//       "Providing robust and scalable server-side solutions with efficient database management.",
+//     href: "",
+//   },
+//   {
+//     num: "05",
+//     title: "E-Commerce Development",
+//     description:
+//       "Developing feature-rich e-commerce platforms with dynamic dashboards for sellers and admins.",
+//     href: "",
+//   },
+// ];
+
 const Services = [
   {
     num: "01",
-    title: "MERN Stack Development",
+    title: "Full-Stack MERN Development",
     description:
-      "Specializing in developing full-stack web applications using MongoDB, Express.js, React.js, and Node.js.",
-    href: "",
+      "End-to-end web application development using MongoDB, Express.js, React.js, and Node.js. Building scalable, secure, and high-performance full-stack solutions.",
+    href: "/contact",
+    learnMore:
+      "https://www.google.com/search?q=Full-Stack+MERN+Development&rlz=1C1_____en-USPK1047PK1047&oq=Full-Stack+MERN+Development&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzIxOGowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
   },
   {
     num: "02",
-    title: "Next.js Development",
+    title: "Next.js Application Development",
     description:
-      "Building high-performance, SEO-friendly web applications using Next.js and its advanced features.",
-    href: "",
+      "Building server-rendered, static, and hybrid applications with Next.js. Leveraging features like ISR, API routes, and image optimization for blazing-fast web experiences.",
+    href: "/contact",
+    learnMore:
+      "https://www.google.com/search?q=Next.js+Application+Development&rlz=1C1_____en-USPK1047PK1047&oq=Next.js+Application+Development&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMg0IAxAAGIYDGIAEGIoFMg0IBBAAGIYDGIAEGIoFMg0IBRAAGIYDGIAEGIoFMgcIBhAAGO8FMgcIBxAAGO8F0gEHODg1ajBqOagCALACAA&sourceid=chrome&ie=UTF-8",
   },
   {
     num: "03",
-    title: "Front-End Development",
+    title: "React Native Mobile Development",
     description:
-      "Creating visually appealing and responsive user interfaces using modern frameworks like React.js.",
-    href: "",
+      "Creating cross-platform mobile applications with React Native. Delivering native-like performance with shared codebase for iOS and Android platforms.",
+    href: "/contact",
+    learnMore:
+      "https://www.google.com/search?q=React+Native+Mobile+Development&rlz=1C1_____en-USPK1047PK1047&oq=React+Native+Mobile+Development&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzMxMWowajmoAgCwAgA&sourceid=chrome&ie=UTF-8",
   },
   {
     num: "04",
-    title: "Back-End Development",
+    title: "API & Backend Development",
     description:
-      "Providing robust and scalable server-side solutions with efficient database management.",
-    href: "",
+      "Designing RESTful and GraphQL APIs with Node.js and Express. Implementing authentication, database integration, and cloud deployment.",
+    href: "/contact",
+    learnMore:
+      "https://www.google.com/search?q=API+%26+Backend+Development&rlz=1C1_____en-USPK1047PK1047&oq=API+%26+Backend+Development&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDEzMzFqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8",
   },
   {
     num: "05",
-    title: "E-Commerce Development",
+    title: "Database Design & Optimization",
     description:
-      "Developing feature-rich e-commerce platforms with dynamic dashboards for sellers and admins.",
-    href: "",
+    "MongoDB schema design, indexing strategies, and performance optimization. Implementing efficient data storage and retrieval solutions.",
+    href: "/contact",
+    learnMore:
+    "https://www.google.com/search?q=Database+Design+%26+Optimization&rlz=1C1_____en-USPK1047PK1047&oq=Database+Design+%26+Optimization&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzI5NGowajmoAgCwAgA&sourceid=chrome&ie=UTF-8",
   },
+  // {
+  //   num: "06",
+  //   title: "Progressive Web Apps (PWA)",
+  //   description:
+  //     "Developing PWAs that combine web and mobile app experiences. Offline capabilities, push notifications, and app-like performance.",
+  //   href: "/contact",
+  //   learnMore:
+  //     "https://www.google.com/search?q=Progressive+Web+Apps+(PWA)&rlz=1C1_____en-USPK1047PK1047&oq=Progressive+Web+Apps+(PWA)&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzQzMWowajmoAgCwAgA&sourceid=chrome&ie=UTF-8",
+  // },
 ];
 
 const ServicesPage = () => {
@@ -183,7 +240,8 @@ const ServicesPage = () => {
 
                   <div className="pt-4 border-t border-white/10">
                     <Link
-                      href={service.href}
+                      href={service.learnMore}
+                      target="_blank"
                       className="inline-flex items-center text-accent hover:text-accent/80 transition-colors duration-300"
                     >
                       Learn more

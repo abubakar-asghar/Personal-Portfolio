@@ -231,13 +231,18 @@ const Contact = () => {
                   <SelectContent>
                     <SelectGroup>
                       <SelectLabel>Select a service</SelectLabel>
-                      <SelectItem value="FrontEnd Development">
-                        FrontEnd Development
-                      </SelectItem>
-                      <SelectItem value="FullStack Development">
-                        FullStack Development
-                      </SelectItem>
-                      <SelectItem value="Logo Design">Logo Design</SelectItem>
+                      {[
+                        "FrontEnd Development",
+                        "FullStack MERN Development",
+                        "Next.js Application Development",
+                        "React Native Mobile Development",
+                        "API & Backend Development",
+                        "Database Design & Optimization",
+                      ].map((item, index) => (
+                        <SelectItem key={item + index} value={item}>
+                          {item}
+                        </SelectItem>
+                      ))}
                     </SelectGroup>
                   </SelectContent>
                 </Select>
