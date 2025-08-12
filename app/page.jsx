@@ -1,3 +1,5 @@
+"use client";
+
 import Photo from "@/Components/Photo";
 import Social from "@/Components/Social";
 import { Stats } from "@/Components/Stats";
@@ -5,6 +7,28 @@ import { Button } from "@/Components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
 export const Home = () => {
+  const handleDownloadCV = async () => {
+  try {
+    const response = await fetch("/assets/Abubakar_CV.pdf");
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "AbuBakar_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    
+    // Cleanup
+    setTimeout(() => {
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    }, 100);
+  } catch (error) {
+    console.error("Download failed:", error);
+  }
+};
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -12,7 +36,8 @@ export const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">FullStack Developer</span>
             <h1 className="h1 mb-6">
-              Hello I&apos;m <br /> <span className="text-accent">AbuBakar</span>
+              Hello I&apos;m <br />{" "}
+              <span className="text-accent">AbuBakar</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               A Full Stack Developer dedicated to creating dynamic and
@@ -24,6 +49,7 @@ export const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={handleDownloadCV}
               >
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />

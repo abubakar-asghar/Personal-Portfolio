@@ -19,7 +19,7 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[290px] h-[290px] xl:w-[480px] xl:h-[480px] mix-blend-lighten absolute "
+          className="w-[290px] h-[290px] xl:w-[480px] xl:h-[480px] absolute "
         >
           <Image
             src="/assets/photo.png"
